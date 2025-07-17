@@ -1,0 +1,37 @@
+func printState() {
+	str := `
+	(eventbox :onclick 'echo "`+strconv.Itoa(int(notification.Id))+`|close"> /tmp/notifications.pipe'
+	(box :class "notif"
+	(box :orientation "h" :space-evenly "false"`
+	image := `(box :hexpand "true" :class "image-container" (image :image-width 90 :image-height 90 :path "` + notification.Icon + `"))`
+	notif:=`(box :orientation "v" :class "notification_text" :hexpand "true" :vexpand "true" :space-evenly "false"
+	(label :wrap "true" :class "notif-summary" :halign "center" :vexpand "true" :valign "end" :limit-width 20 :text "` + notification.Summary + `")
+	(label :wrap "true" :class "notif-body" :halign "center" :vexpand "true" :valign "center" :limit-width 40 :text "` + notification.Body + `")
+	(box :orientation "h" :class "notif-actions" :vexpand "true" :valign "start" :space-evenly "true"          
+	`
+	if notification.Icon != ""{
+		str+=image
+	}
+	str+=notif
+	for i := 0; i < len(notification.Actions); i += 2 {
+		str += `(button :class "action" :onclick 'echo "` + strconv.Itoa(int(notification.Id)) + `|action|` + notification.Actions[i] + `" > /tmp/notifications.pipe' "` + notification.Actions[i+1] + `")`
+	}
+	str += ")))))"
+	str = strings.ReplaceAll(str, "\n", " ")
+	
+	// Execute the commands
+	updateCmd := exec.Command("eww", "update", "NOTIFICATION="+str)
+	err := updateCmd.Run()
+	if err != nil {
+		log.Printf("Error updating eww: %v", err)
+	}
+	
+	openCmd := exec.Command("eww", "open", "notifications")
+	err = openCmd.Run()
+	if err != nil {
+		log.Printf("Error opening eww window: %v", err)
+	}
+	
+	fmt.Println(str)
+	log.Println(str)
+}

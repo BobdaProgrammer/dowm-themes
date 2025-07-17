@@ -1,0 +1,88 @@
+#!/bin/bash
+
+## Get data
+STATUS="$(playerctl --ignore-player "chromium" status)"
+COVER="/tmp/.music_cover.jpg"
+MUSIC_DIR="$HOME/Music"
+
+## Get status
+
+get_status() {
+	if [[ $STATUS == "Playing" ]]; then
+		echo ""
+	else
+		echo "󰼛"
+	fi
+}
+
+
+## Get song
+get_song() {
+	song=`playerctl --ignore-player "chromium" metadata title`
+	if [[ -z "$song" ]]; then
+		echo "Offline"
+	else
+		echo "$song"
+	fi	
+}
+
+## Get artist
+get_artist() {
+	artist=`playerctl --ignore-player "chromium" metadata artist`
+	if [[ -z "$artist" ]]; then
+		echo "Offline"
+	else
+		echo "$artist"
+	fi	
+}
+
+## Get time
+
+get_time() {
+    total=$(playerctl --ignore-player "chromium" metadata mpris:length)
+    position=$(playerctl --ignore-player "chromium" position)
+
+    # Check if total is empty or zero to avoid division errors
+    if [[ -z "$total" || "$total" -eq 0 ]]; then
+        echo "0"
+        return
+    fi
+
+    # Convert nanoseconds to seconds
+    total_sec=$((total / 1000000))
+    percent=$(awk -v p="$position" -v t="$total_sec" 'BEGIN { printf "%.0f", (p / t) * 100 }')
+    echo "$percent"
+}
+
+
+
+
+## Get cover
+get_cover() {
+    echo $(playerctl --ignore-player "chromium" metadata mpris:artUrl)
+}
+
+## Execute accordingly
+if [[ "$1" == "--song" ]]; then
+	get_song
+elif [[ "$1" == "--artist" ]]; then
+	get_artist
+elif [[ "$1" == "--status" ]]; then
+	get_status
+elif [[ "$1" == "--time" ]]; then
+	get_time
+elif [[ "$1" == "--ctime" ]]; then
+	get_ctime
+elif [[ "$1" == "--ttime" ]]; then
+	get_ttime
+elif [[ "$1" == "--cover" ]]; then
+	get_cover
+elif [[ "$1" == "--toggle" ]]; then
+	playerctl --ignore-player "chromium" play-pause
+elif [[ "$1" == "--next" ]]; then
+	playerctl --ignore-player "chromium" next
+    get_cover
+elif [[ "$1" == "--prev" ]]; then
+	playerctl --ignore-player "chromium" previous 
+    get_cover
+fi

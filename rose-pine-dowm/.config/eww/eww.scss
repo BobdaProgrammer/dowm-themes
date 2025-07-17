@@ -1,0 +1,354 @@
+/** Global *******************************************/
+
+
+*{
+	all: unset;
+	font-family: feather;
+	font-family: Iosevka;
+}
+
+
+tooltip {
+  background-color: #14171c;
+  color: #b8bfe5;
+  font-family: Inconsolata SemiCondensed Medium;
+  font-weight: Bold;
+  font-size: 1rem;
+}
+
+.confirm-win{
+  border-radius: 16px;
+  background: #232136;
+  padding: 10px;
+}
+
+.confirm-text{ 
+  margin-bottom: 15px;
+  color: #e0def4;
+  font-size: 15px;
+} 
+
+.confirm-button{
+  border-radius: 6px;
+  font-size: 20px;
+  background: rgb(30, 32, 48);
+}
+
+.confirmed{
+  background: #9ccfd8;
+}
+
+.noconfirm{
+ background: #eb6f92;
+}
+
+.logout-button{
+  min-width: 200px;
+  min-height: 125px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px rgb(25, 23, 36);
+  background: rgb(35, 33, 54);
+  transition: 0.5s ease;
+}
+
+.logout-icon{
+  font-size: 165px;
+  color: #c4a7e7;
+}
+
+.logout-text{
+  color: #eb6f92;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.logout-button:hover{
+  box-shadow: 0px 0px 5px 3px rgba(45,255,196,0.9);
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.logout-win{
+  padding: 10px;
+}
+
+/** Background ***************************************/
+.bg {
+	background-image: url("images/bg.png");
+	background-color: #1e2030;
+	opacity: 1;
+} 
+
+
+
+.notif-actions{
+  margin-top: 3px;
+  padding-left: 5px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+.image-container{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: rgba(35, 33, 54, 0.9);
+  padding-left:5px;
+  padding-right: 5px;
+}
+
+.action{
+  font-family: "Fira Code Nerd Font";
+  background-color: rgb(42, 39, 63);
+  border-radius: 5px;
+  margin-right: 5px;
+  color: #c4a7e7;
+  min-height: 25px;
+}
+
+.notification_text{
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+
+.notif{
+  min-width: 400px;
+  min-height: 125px;
+	background: rgba(57, 53, 82, 0.9);
+    border: 2px solid #56526e;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.urgent{
+  border: 2px solid rgba(235, 111, 146, 0.9);
+}
+.notif-summary{
+  color: #8bd5ca;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Fira Code Nerd Font"
+}
+.notif-body{
+  color: #91d7e3;
+  font-family: "Fira Code Nerd Font"
+}
+/** Generic window ***********************************/
+.eww-music-window {
+	background: rgba(30, 32, 48, 0.9);
+	border-radius: 16px;
+}
+
+.music{
+  border-radius: 20px;
+  background: rgba(35, 33, 54, 0.9);
+}
+
+
+.wallpapers{
+
+  border-radius: 20px;
+  background: rgba(18,19,36, 0.9);
+}
+
+.cover{
+  margin-top: 10px;
+  min-height: 190px;
+  min-width: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.brightness-bar-window{
+    background-color: rgb(35, 33, 54);
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.brightness-window{
+    background: rgba(35, 33, 54, 0.9);
+    border-radius: 10px;
+    font-family: "Fira Code Nerd Font";
+    color: #9ccfd8;
+}
+
+
+.brightness-text{
+  font-size: 40px;
+    font-family: "Fira Code Nerd Font";
+}
+
+.decrease-btn{
+    background: rgba(57, 53, 82, 0.9);
+    border-radius: 7px;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.increase-btn{
+    background: rgba(57, 53, 82, 0.9);
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/** Music ***************************************/
+.album_art {
+	background-size: 240px;
+	min-height: 240px;
+	min-width: 240px;
+	margin: 20px;
+	border-radius: 14px;
+}
+
+.song {
+	color: #9ccfd8;
+	font-size : 24px;
+	font-weight : bold;
+	margin : 40px 0px 0px 0px;
+}
+
+.artist {
+	color: #f6c177;
+	font-size : 16px;
+	font-weight : normal;
+	margin : 0px 0px 15px 0px;
+}
+
+.btn_prev, .btn_play, .btn_next {
+	font-family: Iosevka Nerd Font;
+}
+.btn_prev {
+	color: #f6c177;
+	font-size : 32px;
+	font-weight : normal;
+}
+.btn_play {
+	color: #a6da95;
+	font-size : 20px;
+	font-weight : bold;
+}
+.btn_next {
+	color: #f6c177;
+	font-size : 32px;
+	font-weight : normal;
+}
+
+.music_bar scale trough highlight {
+	all: unset;
+	background-color: #c6a0f6;
+	border-radius: 8px;
+}
+.music_bar scale trough {
+	all: unset;
+	background-color: #363a4f;
+	border-radius: 8px;
+	min-height: 20px;
+	min-width: 310px;
+	margin : 10px 0px 0px 0px;
+}
+
+.brightness_bar{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.brightness_bar scale trough highlight {
+	all: unset;
+	background-color: #9ccfd8;
+	border-radius: 8px;
+}
+.brightness_bar scale trough {
+	all: unset;
+	background-color: #363a4f;
+	border-radius: 8px;
+	min-height: 20px;
+	min-width: 310px;
+	margin : 10px 0px 0px 0px;
+}
+
+.small_brightness_bar scale trough highlight{
+	all: unset;
+	background-color: #9ccfd8;
+	border-radius: 8px;
+}
+
+.small_brightness_bar scale trough{
+	all: unset;
+	background-color: #363a4f;
+	border-radius: 10px;
+	min-height: 10px;
+	min-width: 50px;
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.brightVal{
+  margin: 0px 0px 0px 0px;
+  font-family: "Fira Code Nerd Font";
+  color: #9ccfd8;
+}
+
+.song_duration_bar scale trough highlight{
+	all: unset;
+	background-color: #3ebfb0;   
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.song_duration_bar scale trough{
+    all: unset;
+    background: rgba(0,0,0,0);
+    min-height: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 5px;
+}
+.song-text{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+  color: #3ebfb0;
+}
+
+.artist-text{
+  font-size: 10px;
+  color: #908caa;
+}
+
+.song-text, .artist-text{
+  font-family: "FiraCode Nerd Font";
+}
+
+.musicButtons{
+  margin-top: 7px;
+}
+
+.disc{
+  border-radius: 50px;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.music_btn{
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 30px;
+  background-color: #3ebfb0;
+  padding: 10px;
+  color: #180939;
+  font-size: 22px;
+}
+
+@import "colors.scss";
+@import "player/player.scss";

@@ -1,0 +1,52 @@
+.urgent{
+  border: 2px solid rgba(237, 135, 150, 0.9);
+}
+
+.notif-actions{
+  margin-top: 3px;
+  padding-left: 5px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+.image-container{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #1a2026;
+  padding-left:5px;
+  padding-right: 5px;
+}
+
+.action{
+  font-family: "Fira Code Nerd Font";
+  background-color: #2d3741;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: #ffffff;
+  min-height: 25px;
+}
+
+.notification_text{
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+
+.notif{
+  min-width: 400px;
+  min-height: 125px;
+	background: #242d35;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.notif-summary{
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Fira Code Nerd Font"
+}
+.notif-body{
+  color: #ffffff;
+  font-family: "Fira Code Nerd Font"
+}

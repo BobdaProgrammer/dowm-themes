@@ -1,0 +1,394 @@
+/** Global *******************************************/
+*{
+	all: unset;
+	font-family: feather;
+	font-family: Iosevka;
+}
+
+.confirm-win{
+  border-radius: 16px;
+  background: #282828;
+  padding: 10px;
+}
+
+.confirm-text{ 
+  margin-bottom: 15px;
+  color: #f4dbd6;
+  font-size: 15px;
+} 
+
+.confirm-button{
+  border-radius: 6px;
+  font-size: 20px;
+  background: #3c3836;
+}
+
+.confirmed{
+  background: #8ec07c;
+}
+
+.noconfirm{
+ background: #d3869b;
+}
+
+.logout-button{
+  min-width: 200px;
+  min-height: 125px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px #1d2021;
+  background: #282828;
+  transition: 0.5s ease;
+}
+
+.logout-icon{
+  font-size: 165px;
+  color: #fe8019;
+}
+
+.logout-text{
+  color: #b16286;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.logout-button:hover{
+  box-shadow: 0px 0px 5px 3px rgba(244,128,25,0.9);
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.logout-win{
+  padding: 10px;
+}
+
+/** Background ***************************************/
+.bg {
+	background-image: url("images/bg.png");
+	background-color: #282828;
+	opacity: 1;
+} 
+.workspace-container {
+  background-color: black;
+  border: 2px solid #313244;
+  border-radius: 8px;
+  min-height: 600px;
+  min-width: 800px;
+}
+
+.workspace-overlay {
+  min-height: 600px;
+  min-width: 800px;
+  background: black;
+}
+
+.max{
+  min-width: 800px;
+  min-height: 600px;
+}
+
+// Base window styling
+.window {
+  background-color: #313244;
+  border-radius: 6px;
+  label {
+    color: #cdd6f4;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+}
+
+
+
+// Active window highlight
+.window.active {
+  border-color: #89b4fa;
+  background-color: #383a59;
+  
+  label {
+    color: #89b4fa;
+  }
+}
+
+// Workspace title bar (optional)
+.workspace-title {
+  background-color: #45475a;
+  padding: 4px 12px;
+  border-radius: 6px 6px 0 0;
+  
+  label {
+    color: #a6adc8;
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+
+
+.notif-actions{
+  margin-top: 3px;
+  padding-left: 5px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+.image-container{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left:5px;
+  padding-right: 5px;
+}
+
+.action{
+  font-family: "Fira Code Nerd Font";
+  background-color: #3c3836;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: #458588;
+  min-height: 25px;
+}
+
+.notification_text{
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+
+.notif{
+  min-width: 400px;
+  min-height: 125px;
+	background: rgba(29, 22, 33, 0.9);
+    border: 2px solid #665c64;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.notif-summary{
+  color: #458588;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Fira Code Nerd Font"
+}
+.notif-body{
+  color: #83a598;
+  font-family: "Fira Code Nerd Font"
+}
+.urgent{
+  border: 2px solid rgba(237, 135, 150, 0.9);
+}
+/** Generic window ***********************************/
+.eww-music-window {
+	background: rgba(30, 32, 48, 0.9);
+	border-radius: 16px;
+}
+
+.music{
+  border-radius: 20px;
+  background: rgba(40,40,40, 0.9);
+}
+
+
+.wallpapers{
+
+  border-radius: 20px;
+  background: rgba(18,19,36, 0.9);
+}
+
+.cover{
+  margin-top: 10px;
+  min-height: 190px;
+  min-width: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.brightness-bar-window{
+    background-color: rgb(40, 40, 40);
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.brightness-window{
+    background: rgba(40, 40, 40, 0.9);
+    border-radius: 10px;
+    font-family: "Fira Code Nerd Font";
+    color: #fe8019;
+}
+
+
+.brightness-text{
+  font-size: 40px;
+    font-family: "Fira Code Nerd Font";
+}
+
+.decrease-btn{
+    background: #3c3836;
+    border-radius: 7px;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.increase-btn{
+    background: #3c3836;
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/** Music ***************************************/
+.album_art {
+	background-size: 240px;
+	min-height: 240px;
+	min-width: 240px;
+	margin: 20px;
+	border-radius: 14px;
+}
+
+.song {
+	color: #83c07c;
+	font-size : 24px;
+	font-weight : bold;
+	margin : 40px 0px 0px 0px;
+}
+
+.artist {
+	color: #83a598;
+	font-size : 16px;
+	font-weight : normal;
+	margin : 0px 0px 15px 0px;
+}
+
+.btn_prev, .btn_play, .btn_next {
+	font-family: Iosevka Nerd Font;
+}
+.btn_prev {
+	color: #f5a97f;
+	font-size : 32px;
+	font-weight : normal;
+}
+.btn_play {
+	color: #a6da95;
+	font-size : 20px;
+	font-weight : bold;
+}
+.btn_next {
+	color: #f5a97f;
+	font-size : 32px;
+	font-weight : normal;
+}
+
+.music_bar scale trough highlight {
+	all: unset;
+	background-color: #c6a0f6;
+	border-radius: 8px;
+}
+.music_bar scale trough {
+	all: unset;
+	background-color: #363a4f;
+	border-radius: 8px;
+	min-height: 20px;
+	min-width: 310px;
+	margin : 10px 0px 0px 0px;
+}
+
+.brightness_bar{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.brightness_bar scale trough highlight {
+	all: unset;
+	background-color: #f5a97f;
+	border-radius: 8px;
+}
+.brightness_bar scale trough {
+	all: unset;
+	background-color: #363a4f;
+	border-radius: 8px;
+	min-height: 20px;
+	min-width: 310px;
+	margin : 10px 0px 0px 0px;
+}
+
+.small_brightness_bar scale trough highlight{
+	all: unset;
+	background-color: #f5a97f;
+	border-radius: 8px;
+}
+
+.small_brightness_bar scale trough{
+	all: unset;
+	background-color: #363a4f;
+	border-radius: 10px;
+	min-height: 10px;
+	min-width: 50px;
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.brightVal{
+  margin: 0px 0px 0px 0px;
+  font-family: "Fira Code Nerd Font";
+  color: #f5a97f;
+}
+
+.song_duration_bar scale trough highlight{
+	all: unset;
+	background-color: #83c07c;   
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.song_duration_bar scale trough{
+    all: unset;
+    background: rgba(0,0,0,0);
+    min-height: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 5px;
+}
+.song-text{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+  color: #83c07c;
+}
+
+.artist-text{
+  font-size: 10px;
+  color: #83a598;
+}
+
+.song-text, .artist-text{
+  font-family: "FiraCode Nerd Font";
+}
+
+.musicButtons{
+  margin-top: 7px;
+}
+
+.disc{
+  border-radius: 50px;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.music_btn{
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 30px;
+  background-color: #83c07c;
+  padding: 10px;
+  color: #180939;
+  font-size: 22px;
+}
