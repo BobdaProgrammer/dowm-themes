@@ -1,0 +1,497 @@
+outer-gap: 0
+
+# gaps for tiling windows
+gaps: 10
+
+# the mod key used for all window manager actions
+# Mod1 = alt
+# Mod4 = windows/super key
+# those are the usual although all 1-5 are supported
+mod-key: "Mod4"
+
+# if set to true, tiling will be enabled at the start instead of having to toggle tiling
+default-tiling: true
+
+border-width: 3
+
+# border color for unfocused windows
+unactive-border-color: 0x8fbcbb
+
+# border color for focused windows
+active-border-color: 0x88c0d0
+layouts:
+  - 1:
+    - windows: # 1 window
+      - x: 0.0
+        y: 0.0
+        width: 1.0
+        height: 1.0
+
+
+  - 2:
+    - windows: # 2 windows
+      - x: 0.0
+        y: 0.0
+        width: 0.5
+        height: 1.0
+      - x: 0.5
+        y: 0.0
+        width: 0.5
+        height: 1.0
+    - windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.66666666
+        height: 1.0
+      - x: 0.6666666666666
+        y: 0.0
+        width: 0.33333333333333
+        height: 1
+
+
+  - 3:
+    - windows: # 3 windows
+      - x: 0.0
+        y: 0.0
+        width: 0.5  # 1/3
+        height: 1.0
+      - x: 0.5
+        y: 0.0
+        width: 0.5  # 1/3
+        height: 0.5
+      - x: 0.5
+        y: 0.5
+        width: 0.5  # 1/3
+        height: 0.5
+    - windows: # 3 windows
+      - x: 0.0
+        y: 0.0
+        width: 0.66666666666  # 1/3
+        height: 1.0
+      - x: 0.666666666666
+        y: 0.0
+        width: 0.3333333333333  # 1/3
+        height: 0.33333333333333
+      - x: 0.6666666666
+        y: 0.33333333333333
+        width: 0.333333333333  # 1/3
+        height: 0.6666666666666
+    - windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.333333333
+        height: 1.0
+      - x: 0.33333333333333
+        y: 0.0
+        width: 0.333333333
+        height: 1.0
+      - x: 0.6666666666666
+        y: 0.0
+        width: 0.333333333
+        height: 1.0
+    - windows:
+      - x: 0.0
+        y: 0.0
+        height: 0.333333333
+        width: 1.0
+      - y: 0.33333333333333
+        x: 0.0
+        height: 0.333333333
+        width: 1.0
+      - y: 0.6666666666666
+        x: 0.0
+        height: 0.333333333
+        width: 1.0
+    - windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.333333333
+        height: 0.5
+      - x: 0.333333333
+        y:  0.00
+        width: 0.66666666666
+        height: 0.5
+      - x: 0.00
+        y: 0.5
+        width: 1.0
+        height: 0.5
+  - 4:
+    - windows: # 4 windows
+      - x: 0.0
+        y: 0.0
+        width: 0.5
+        height: 0.5
+      - x: 0.5
+        y: 0.0
+        width: 0.5
+        height: 0.5
+      - x: 0.0
+        y: 0.5
+        width: 0.5
+        height: 0.5
+      - x: 0.5
+        y: 0.5
+        width: 0.5
+        height: 0.5
+    - windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.25
+        height: 1.0
+      - x: 0.25
+        y: 0.0
+        width: 0.25
+        height: 1.0 
+      - x: 0.5
+        y: 0.0
+        width: 0.25
+        height: 1.0
+      - x: 0.75
+        y: 0.0
+        width: 0.25
+        height: 1.0 
+    - windows: # 4 windows
+      - x: 0.0
+        y: 0.0
+        width: 0.5
+        height: 1.0
+      - x: 0.5
+        y: 0.0
+        width: 0.5
+        height: 0.33333333
+      - x: 0.5
+        y: 0.33333333
+        width: 0.5
+        height: 0.33333333
+      - x: 0.5
+        y: 0.66666666
+        width: 0.5
+        height: 0.333333333
+    - windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.5
+        height: 0.6666666
+      - x: 0.5
+        y: 0.0
+        width: 0.5
+        height: 0.3333333
+      - x: 0.5
+        y: 0.333333333
+        width: 0.5
+        height: 0.33333333
+      - x: 0.00
+        y: 0.66666666666
+        width: 1.0
+        height: 0.333333333
+
+  - 5:      
+    - windows: # 5 windows
+      - x: 0.0
+        y: 0.0
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.33333333333
+        y: 0.0
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.66666666666
+        y: 0.0
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.0
+        y: 0.5
+        width: 0.5
+        height: 0.5
+      - x: 0.5
+        y: 0.5
+        width: 0.5
+        height: 0.5
+
+  - 6:
+    - windows: # 6 windows
+      - x: 0.0
+        y: 0.0
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.33333333333
+        y: 0.0
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.66666666666
+        y: 0.0
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.0
+        y: 0.5
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.33333333333
+        y: 0.5
+        width: 0.3333333333
+        height: 0.5
+      - x: 0.66666666666
+        y: 0.5
+        width: 0.3333333333
+        height: 0.5
+
+  - 7:
+    - windows: # 7 windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.5
+        height: 0.3333333333
+      - x: 0.0
+        y: 0.33333333333333
+        width: 0.5
+        height: 0.3333333333
+      - x: 0.0
+        y: 0.6666666666666
+        width: 0.5
+        height: 0.3333333333
+      - x: 0.5
+        y: 0.0
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.25
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.5
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.75
+        width: 0.5
+        height: 0.25
+
+  - 8:
+    - windows: # 8 windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.5
+        height: 0.25
+      - x: 0.0
+        y: 0.25
+        width: 0.5
+        height: 0.25
+      - x: 0.0
+        y: 0.5
+        width: 0.5
+        height: 0.25
+      - x: 0.0
+        y: 0.75
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.0
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.25
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.5
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.75
+        width: 0.5
+        height: 0.25
+    - windows:
+      - x: 0.00
+        y: 0.0 
+        width: 0.25
+        height: 0.75
+      - x: 0.0
+        y: 0.75
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        width: 0.25
+        height: 0.25
+        y: 0.0
+      - x: 0.25
+        y: 0.25
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        y: 0.5
+        width: 0.5
+        height: 0.5
+      - x: 0.5
+        y: 0.0
+        width: 0.166666666666
+        height: 0.5
+      - x: 0.666666666666
+        y: 0.0
+        width: 0.0833333333333
+        height: 0.5
+      - x: 0.75
+        y: 0.0
+        width: 0.25
+        height: 1.0
+  - 9:
+    - windows: # 10 windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.25
+        height: 1.0
+      - x: 0.25
+        y: 0.0
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        y: 0.25
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        y: 0.5
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        y: 0.75
+        width: 0.25
+        height: 0.25
+      - x: 0.5
+        y: 0.0
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.25
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.5
+        width: 0.5
+        height: 0.25
+      - x: 0.5
+        y: 0.75
+        width: 0.5
+        height: 0.25
+  - 10:
+    - windows: # 10 windows:
+      - x: 0.0
+        y: 0.0
+        width: 0.25
+        height: 1.0
+      - x: 0.25
+        y: 0.0
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        y: 0.25
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        y: 0.5
+        width: 0.25
+        height: 0.25
+      - x: 0.25
+        y: 0.75
+        width: 0.25
+        height: 0.25
+      - x: 0.5
+        y: 0.0
+        width: 0.25
+        height: 0.25
+      - x: 0.5
+        y: 0.25
+        width: 0.25
+        height: 0.25
+      - x: 0.5
+        y: 0.5
+        width: 0.25
+        height: 0.25
+      - x: 0.5
+        y: 0.75
+        width: 0.25
+        height: 0.25
+      - x: 0.75
+        y: 0.0
+        width: 0.25
+        height: 1.0
+# keybindings
+# follow this pattern
+# a key (can't be multiple) in lowercase
+# wether the kebybind is with shift
+# either a command to exec or a role in the window manager
+# roles are:
+# - quit
+# - force-quit
+# - toggle-tiling
+# - toggle-fullscreen
+# - swap-window-left
+# - swap-window-right
+# - focus-window-left
+# - focus-window-right
+# - reload-config
+keybinds:
+  - key: "w"
+    shift: false
+    exec: "rofi -show drun -config /home/sam/rices/nord/.config/rofi/launcher.rasi"
+  - key: "t"
+    shift: false
+    exec: "kitty"
+  - key: "e"
+    shift: false
+    exec: "thunar"
+  - key: "f1"
+    shift: false
+    exec: "pactl set-sink-mute @DEFAULT_SINK@ toggle'"
+  - key: "f2"
+    shift: false
+    exec: "sh -c 'pactl set-sink-volume @DEFAULT_SINK@ -5% && eww update VOLUME=$(~/.config/eww/scripts/volume.sh --get)&& ~/.config/eww/openers/volumeBar.sh'"
+  - key: "f3"
+    shift: false
+    exec: "sh -c 'pactl set-sink-volume @DEFAULT_SINK@ +5% && eww update VOLUME=$(~/.config/eww/scripts/volume.sh --get)&& ~/.config/eww/openers/volumeBar.sh'"
+  - key: "f4"
+    shift: false
+    exec: "sh -c 'brightnessctl set 5- && eww update BRIGHTNESS=$(~/.config/eww/scripts/brightness.sh --get) && eww update BRIGHTNESSPER=$(~/.config/eww/scripts/brightness.sh --get-percent) && /home/sam/.config/eww/openers/brightnessBar.sh'"
+  - key: "f5"
+    shift: false
+    exec: "sh -c 'brightnessctl set +5 && eww update BRIGHTNESS=$(~/.config/eww/scripts/brightness.sh --get) && eww update BRIGHTNESSPER=$(~/.config/eww/scripts/brightness.sh --get-percent) && /home/sam/.config/eww/openers/brightnessBar.sh'"
+  - key: "c"
+    shift: false
+    role: "quit"
+  - key: "s"
+    shift: false
+    exec: "flameshot gui"
+  - key: "c"
+    shift: true
+    role: "force-quit"
+  - key: "f"
+    shift: false
+    role: "toggle-fullscreen"
+  - key: "v"
+    shift: false
+    role: "toggle-tiling"
+  - key: "v"
+    shift: true
+    role: "detach-tiling"
+  - key: "left"
+    shift: true
+    role: "swap-window-left"
+  - key: "right"
+    shift: true
+    role: "swap-window-right"
+  - key: "left"
+    shift: false
+    role: "focus-window-left"
+  - key: "right"
+    shift: false
+    role: "focus-window-right"
+  - key: "r"
+    shift: true
+    role: "reload-config"
+  - key: "l"
+    shift: false
+    role: "next-layout"
+  - key: "up"
+    shift: false
+    role: "increase-gap"
+  - key: "down"
+    shift: false
+    role: "decrease-gap"
