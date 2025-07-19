@@ -7,7 +7,7 @@ killall dunst
 
 
 notify-send "startup"
-feh --bg-scale ~/wallpapers/picker/brah.jpg
+feh --bg-scale ~/wallpapers/picker/trees.jpg
 
 polybar &
 
